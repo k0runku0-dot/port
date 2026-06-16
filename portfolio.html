@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Alexandra Voss — Designer Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<title>Nour Alfarsi — Designer Portfolio</title>
+<!-- استخدام Bebas Neue كبديل لـ GRUNT -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
   /* ── TOKENS ───────────────────────────────────────────── */
   :root {
@@ -131,27 +132,21 @@
     background: var(--blue-slate);
   }
 
+  /* الاسم بفونت Bebas Neue بدل GRUNT */
   .hero-name {
-    font-family: var(--ff-display);
-    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
     font-size: clamp(4rem, 10vw, 9.5rem);
-    line-height: .95;
-    letter-spacing: -.02em;
-    color: var(--alabaster);
-    margin-bottom: 10px;
-  }
-
-  .hero-name .accent { color: var(--blue-slate); }
-
-  .hero-title {
-    font-family: var(--ff-display);
-    font-weight: 700;
-    font-size: clamp(3rem, 7.5vw, 7rem);
     line-height: .95;
     letter-spacing: -.02em;
     color: transparent;
     -webkit-text-stroke: 1.5px var(--alabaster-dim);
-    margin-bottom: 48px;
+    margin-bottom: 10px;
+  }
+
+  .hero-name .accent {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--alabaster-dim);
   }
 
   .hero-desc {
@@ -708,7 +703,6 @@
 
   @media (max-width: 600px) {
     nav .nav-cta { display: none; }
-    .hero-title { display: none; }
     .work-card { width: 300px; height: 200px; }
     .footer-links { gap: 32px; }
   }
@@ -722,7 +716,7 @@
 
 <!-- ── HEADER ── -->
 <header>
-  <a class="logo" href="#hero">AV<span>.</span></a>
+  <a class="logo" href="#hero">NF<span>.</span></a>
   <nav>
     <a href="#work">Work</a>
     <a href="#about">About</a>
@@ -734,8 +728,7 @@
 <!-- ── HERO ── -->
 <section id="hero">
   <div class="hero-eyebrow">Creative Designer &amp; Visual Strategist</div>
-  <h1 class="hero-name">Alexandra<br><span class="accent">Voss</span></h1>
-  <p class="hero-title">Portfolio</p>
+  <h1 class="hero-name">Nour<br><span class="accent">Alfarsi</span></h1>
   <p class="hero-desc">
     Crafting intentional, high-impact visual identities and digital experiences 
     that move people — and businesses — forward.
@@ -775,7 +768,7 @@
   <div class="about-visual reveal">
     <img class="about-img"
       src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=700&q=80"
-      alt="Alexandra Voss — Designer"/>
+      alt="Nour Alfarsi — Designer"/>
     <div class="about-frame"></div>
     <div class="about-badge">
       <span class="about-badge-num">8+</span>
@@ -787,7 +780,7 @@
     <div class="section-label">About Me</div>
     <h2>Design that <em>speaks</em><br>before words do</h2>
     <p>
-      I'm Alexandra — a Cairo-based designer obsessed with the space between 
+      I'm Nour Alfarsi — a Cairo-based designer obsessed with the space between 
       concept and execution. My work lives at the intersection of brand identity, 
       digital design, and visual storytelling.
     </p>
@@ -819,7 +812,7 @@
       let's make it extraordinary. Reach out directly or drop a message.
     </p>
     <div class="contact-items">
-      <!-- Gmail compose link — يفتح Gmail مباشرةً ويحط الإيميل في خانة "إلى" -->
+      <!-- Gmail compose link -->
       <a href="https://mail.google.com/mail/?view=cm&to=raragg00@gmail.com&su=Project%20Inquiry" target="_blank" class="contact-item">
         <div class="contact-icon">
           <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
@@ -845,7 +838,7 @@
         </div>
         <div>
           <span class="contact-info-label">Instagram</span>
-          <span class="contact-info-val">@alexandravoss.design</span>
+          <span class="contact-info-val">@spray_arrow</span>
         </div>
       </a>
     </div>
@@ -876,7 +869,7 @@
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a class="footer-logo" href="#hero">Alexandra Voss<span>.</span></a>
+      <a class="footer-logo" href="#hero">Nour Alfarsi<span>.</span></a>
       <p>Designer crafting visual identities and digital experiences with intention, elegance, and purpose.</p>
     </div>
     <div class="footer-links">
@@ -901,7 +894,7 @@
       <div class="footer-col">
         <h4>Connect</h4>
         <ul>
-          <li><a href="mailto:hello@alexandravoss.com">Email</a></li>
+          <li><a href="mailto:hello@nouralfarsi.com">Email</a></li>
           <li><a href="#">LinkedIn</a></li>
           <li><a href="#">Behance</a></li>
           <li><a href="#">Instagram</a></li>
@@ -910,7 +903,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="footer-copy">© 2026 Alexandra Voss. All rights reserved.</p>
+    <p class="footer-copy">© 2026 Nour Alfarsi. All rights reserved.</p>
     <div class="footer-socials">
       <!-- LinkedIn -->
       <a class="social-btn" href="#" aria-label="LinkedIn">
